@@ -47,8 +47,11 @@ int itc_str(int a, int b, int c){
         return -1;
     }
     else{
-        int p = (a+b+c) / 2;
-        return itc_sqrt(p*(p-a) * (p-b) * (p-c));
+        
+        double p = (a+b+c) / 2;
+        int k = itc_sqrt(p*(p-a)*(p-b)*(p-c));
+        return k;
+        //return itc_sqrt(p*(p-a) * (p-b) * (p-c));
 
     }
 
