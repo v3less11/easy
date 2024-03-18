@@ -23,10 +23,12 @@ double itc_fmin(double num, double num2)
 }
 int itc_sqrt(int num)
 {
-    
-    int i = 0;
+    long long i = 0;
     if(num < 0){
         return -1;
+    }
+    if(num == 0){
+        return 0;
     }
     else{
         while(i*i < num){
