@@ -42,17 +42,10 @@ double itc_pow(int num, int step){
     }
 }
 int itc_str(int a, int b, int c){
-    if(a + b < c || a+c < b || b+c < a || a <= 0 || b <= 0 || c <= 0){
+    if(a + b < c || a + c < b || b + c < a ){
         return -1;
     }
-    else{
-        
-        double p = (a+b+c) / 2;
-        int k = itc_sqrt(p*(p-a)*(p-b)*(p-c));
-        return k;
-        //return itc_sqrt(p*(p-a) * (p-b) * (p-c));
-
-    }
-
+    double p = {(a+b+c) / 2.00};
+    return itc_sqrt(p*(p-a) * (p - b) * (p-c));
 }
     
