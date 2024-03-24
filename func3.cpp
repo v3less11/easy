@@ -27,7 +27,7 @@ int itc_sqrt(int num)
     if(num < 0){
         return -1;
     }
-    if(num == 0){
+    else if(num == 0){
         return 0;
     }
     else{
@@ -38,9 +38,10 @@ int itc_sqrt(int num)
             return i;
         }
         else{
-            return i-1;
+            return -1;
         }
     }
+    
 }
 int itc_skv(int num)
 {
